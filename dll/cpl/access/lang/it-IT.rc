@@ -11,7 +11,7 @@ BEGIN
     AUTOCHECKBOX "&Usa Tasti bloccabili", IDC_STICKY_BOX, 12, 49, 126, 14
     PUSHBUTTON "&Impostazioni", IDC_STICKY_BUTTON, 144, 49, 90, 14
     GROUPBOX "Filtro", -1, 6, 79, 234, 67
-    LTEXT "Usa il filtro se vuoi che siano ignorate le pressioni troppo brevi o doppie dei tastio per rallentare la ripetizione automatica.",
+    LTEXT "Usa il filtro se vuoi che siano ignorate le pressioni troppo brevi o doppie dei tasti o per rallentare la ripetizione automatica.",
           -1, 12, 89, 222, 29
     AUTOCHECKBOX "Usa &Filtro", IDC_FILTER_BOX, 12, 121, 126, 14
     PUSHBUTTON "I&mpostazioni", IDC_FILTER_BUTTON, 144, 121, 90, 14
@@ -20,7 +20,7 @@ BEGIN
           -1, 12, 161, 222, 20
     AUTOCHECKBOX "Usa segnali acustici", IDC_TOGGLE_BOX, 12, 184, 126, 14
     PUSHBUTTON "Im&postazioni", IDC_TOGGLE_BUTTON, 144, 184, 90, 14
-    AUTOCHECKBOX "Mostra guida suppelentare per la tastiera nei programmi", IDC_KEYBOARD_EXTRA,
+    AUTOCHECKBOX "Mostra guida supplementare per la tastiera nei programmi", IDC_KEYBOARD_EXTRA,
                  6, 212, 234, 14
 END
 
@@ -93,7 +93,7 @@ BEGIN
     GROUPBOX "Notifiche", -1, 6, 63, 234, 47
     AUTOCHECKBOX "Avvisa con un messaggio quando si attiva una funzione", IDC_NOTIFICATION_MESSAGE,
                  12, 72, 222, 14
-    AUTOCHECKBOX "Fai una segnalazione acustica quando una funzione viene attivata o ddisattivata", IDC_NOTIFICATION_SOUND,
+    AUTOCHECKBOX "Segnalazione acustica con funzione attiva o disattiva", IDC_NOTIFICATION_SOUND,
                  12, 90, 222, 14
     GROUPBOX "Dispositivi seriali", -1, 6, 115, 234, 47
     LTEXT "I dispositivi seriali permettono una modalità alternativa per gestire le funzioni di mouse e tastiera.",
@@ -113,9 +113,9 @@ CAPTION "Impostazione del blocco tasto"
 FONT 8, "MS Shell Dlg"
 BEGIN
     GROUPBOX "Keys", -1, 6, 11, 234, 62
-    LTEXT "Premere lo shift cinque volter per abilitare la funzione di blocco dei tasti.",
+    LTEXT "Premere maiuscolo cinque volte per abilitare blocco dei tasti.",
           -1, 12, 20, 234, 29
-    AUTOCHECKBOX "A&ctivate sticky keys", IDC_STICKY_ACTIVATE_CHECK, 12, 49, 222, 14
+    AUTOCHECKBOX "&Attiva tasti permanenti", IDC_STICKY_ACTIVATE_CHECK, 12, 49, 222, 14
     GROUPBOX "Opzioni", -1, 6, 83, 234, 44
     AUTOCHECKBOX "&Premere il tasto modificatore due volte per bloccarlo", IDC_STICKY_LOCK_CHECK,
                  12, 94, 222, 14
@@ -136,9 +136,9 @@ CAPTION "Impostazione del filtro dei tasti"
 FONT 8, "MS Shell Dlg"
 BEGIN
     GROUPBOX "Scorciatoie della tastiera", -1, 6, 11, 234, 62
-    LTEXT "La scorciatoia per i filtri è:\nTenere premuto lo <Shift destro> per otto secondi.",
+    LTEXT "La scorciatoia per i filtri è:\nTenere premuto <Maiuscolo destro> per otto secondi.",
           -1, 12, 20, 222, 29
-    AUTOCHECKBOX "&Use shortcut", IDC_FILTER_ACTIVATE_CHECK, 12, 49, 126, 14
+    AUTOCHECKBOX "&Utilizza scorciatoia", IDC_FILTER_ACTIVATE_CHECK, 12, 49, 126, 14
     GROUPBOX "Opzioni dei filtri", -1, 6, 79, 234, 79
     AUTORADIOBUTTON "Ign&ora i tasti ripetuti", IDC_FILTER_BOUNCE_RADIO,
                     12, 91, 120, 11, WS_GROUP | WS_TABSTOP
@@ -176,7 +176,7 @@ CAPTION "Impostazioni per contrasto elevato"
 FONT 8, "MS Shell Dlg"
 BEGIN
     GROUPBOX "Scorciatoia da tastiera", -1, 6, 11, 234, 62
-    LTEXT "La scorciatoia per contrasto elevato è:\nPremere <Alt Sinistro+Shift Sinistro+Stamp>.",
+    LTEXT "La scorciatoia per contrasto elevato è:\nPremere <Alt Sinistro+Maiuscolo Sinistro+Stamp>.",
           -1, 12, 20, 222, 29
     AUTOCHECKBOX "&Usare la scorciatoia", IDC_CONTRAST_ACTIVATE_CHECK, 12, 49, 222, 14
     GROUPBOX "Schema dei colori ad alto contrasto", -1, 6, 83, 234, 44
@@ -193,7 +193,7 @@ CAPTION "Impostazione dei tasti del mouse"
 FONT 8, "MS Shell Dlg"
 BEGIN
     GROUPBOX "Scorciatoia da tastiera", -1, 6, 11, 234, 62
-    LTEXT "La scorciatoia per i tasti del mouse è:\nPremere <Alt Sinistro+Shift Sinistro+BlocNum>.",
+    LTEXT "La scorciatoia per i tasti del mouse è:\nPremere <Alt Sinistro+Maiuscolo Sinistro+BlocNum>.",
           -1, 12, 20, 222, 29
     AUTOCHECKBOX "&Usare la scorciatoia", IDC_MOUSEKEYS_ACTIVATE_CHECK,
                  12, 49, 222, 14
@@ -208,7 +208,7 @@ BEGIN
     CONTROL "", IDC_MOUSEKEYS_ACCEL_TRACK, "msctls_trackbar32", TBS_AUTOTICKS | WS_TABSTOP,
             90, 121, 114, 20
     LTEXT "Veloce", -1, 204, 123, 18, 11
-    AUTOCHECKBOX "&Tenere premuto Ctrl per accelerare, Shift per rallentare", IDC_MOUSEKEYS_SPEED_CHECK,
+    AUTOCHECKBOX "&Tenere premuto Ctrl per accelerare, Maiuscolo per rallentare", IDC_MOUSEKEYS_SPEED_CHECK,
                  12, 142, 222, 14
     LTEXT "Usare i tasti del mouse quando BlocNum è:", -1, 6, 171, 120, 11
     AUTORADIOBUTTON "&Attivo", IDC_MOUSEKEYS_ON_RADIO, 162, 171, 30, 11
