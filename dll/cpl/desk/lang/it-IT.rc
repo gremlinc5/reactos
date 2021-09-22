@@ -1,15 +1,15 @@
 LANGUAGE LANG_ITALIAN, SUBLANG_NEUTRAL
 
 IDD_THEMES DIALOGEX 0, 0, 246, 210
-CAPTION "Themes"
+CAPTION "Temi"
 STYLE DS_SHELLFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
 FONT 8, "MS Shell Dlg"
 BEGIN
-    LTEXT "A theme is a background plus a set of sounds, icons, and other elements to help you personalize your computer with one click.", IDC_STATIC, 5, 5, 235, 30
-    LTEXT "Theme:", IDC_STATIC, 5, 42, 55, 10
+    LTEXT "Un tema è uno sfondo con in aggiunta suoni, icone e altri elementi per aiutare la personalizzazione del computer con un click.", IDC_STATIC, 5, 5, 235, 30
+    LTEXT "Temi:", IDC_STATIC, 5, 42, 55, 10
     COMBOBOX IDC_THEMES_COMBOBOX, 5, 52, 160, 300, CBS_HASSTRINGS | CBS_AUTOHSCROLL | CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
-    PUSHBUTTON "Save &As...", IDC_THEMES_SAVE_AS, 170, 52, 70, 14
-    PUSHBUTTON "&Delete", IDC_THEMES_DELETE, 170, 70, 70, 14
+    PUSHBUTTON "Salva &Come...", IDC_THEMES_SAVE_AS, 170, 52, 70, 14
+    PUSHBUTTON "&Elimina", IDC_THEMES_DELETE, 170, 70, 70, 14
     CONTROL "", IDC_THEMES_PREVIEW, "STATIC", SS_BITMAP, 5, 90, 235, 115, WS_EX_CLIENTEDGE
 END
 
@@ -76,7 +76,7 @@ CAPTION "Avanzato"
 FONT 8, "MS Shell Dlg"
 BEGIN
     CONTROL "", IDC_APPEARANCE_PREVIEW, "PreviewWndClass", WS_VISIBLE | WS_BORDER, 7, 7, 232, 120
-    LTEXT "If you select a theme other than ReactOS classic, it will override the following settings, except in some older programs.", IDC_ADVAPPEARANCE_DISCLAIMER, 7, 133, 232, 30, BS_MULTILINE
+    LTEXT "Se si seleziona un tema diverso da ReactOS classic, verranno sovrascritte le seguenti impostazioni, tranne che in alcuni programmi precedenti.", IDC_ADVAPPEARANCE_DISCLAIMER, 7, 133, 232, 30, BS_MULTILINE
     LTEXT "Elemento", 8, 5, 160, 50, 9
     COMBOBOX IDC_ADVAPPEARANCE_ELEMENT, 5, 170, 130, 90, CBS_DROPDOWNLIST |
              CBS_HASSTRINGS | CBS_SORT | WS_CHILD | WS_VSCROLL | WS_TABSTOP
@@ -168,12 +168,12 @@ END
 
 IDD_CONFIRMSETTINGS DIALOGEX 20, 30, 233, 57
 STYLE DS_SHELLFONT | DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
-CAPTION "Display Settings"
+CAPTION "Impostazioni Schermo"
 FONT 8, "MS Shell Dlg"
 BEGIN
-    LTEXT "Do you want to keep these display settings?", IDC_STATIC, 7, 7, 219, 8
+    LTEXT "Si desidera mantenere queste impostazioni schermo?", IDC_STATIC, 7, 7, 219, 8
     LTEXT "", IDC_TIMEOUTTEXT, 7, 20, 219, 8
-    PUSHBUTTON "&Yes", IDYES, 121, 36, 50, 14
+    PUSHBUTTON "&Sì", IDYES, 121, 36, 50, 14
     DEFPUSHBUTTON "&No", IDNO, 175, 36, 50, 14
 END
 
@@ -281,5 +281,5 @@ BEGIN
     IDS_DISPLAY_SETTINGS "Impostazioni del monitor"
     IDS_APPLY_FAILED "Impossibile applicare le nuove impostazioni..."
     IDS_APPLY_NEEDS_RESTART "E' necessario riavviare il computer per applicare le modifiche."
-    IDS_TIMEOUTTEXT "Revert to previous settings in %d seconds."
+    IDS_TIMEOUTTEXT "Ritorno ad impostazioni precedenti in %d secondi."
 END
