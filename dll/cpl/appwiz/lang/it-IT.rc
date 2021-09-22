@@ -82,8 +82,8 @@ BEGIN
     IDS_DWL_FAILED "Lo scaricamento del pacchetto Gecko è fallito. Assicurati che hai una connessione internet per scaricarlo. Il setup procederà senza l'installazione del pacchetto Gecko."
     IDS_CANTMAKEINETSHORTCUT "La creazione di un collegamento internet è fallita."
     IDS_CANTMAKESHORTCUT "La creazione di un collegamento è fallita."
-    IDS_NO_MEMORY "No memory could be allocated!"
-    IDS_NO_DIRECTORY "No directory given!"
-    IDS_INVALID_PATH "The given path is invalid!"
-    IDS_INVALID_NAME "The shortcut name you entered either contained characters that are invalid for file names or was too long."
+    IDS_NO_MEMORY "La memoria non può essere allocata!"
+    IDS_NO_DIRECTORY "Nessuna directory scelta!"
+    IDS_INVALID_PATH "Il percorso cartella fornito non è valido!"
+    IDS_INVALID_NAME "Il nome del collegamento fornito ha caratteri non validi o è troppo lungo."
 END
